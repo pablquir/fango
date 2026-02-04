@@ -1,7 +1,7 @@
 import { useStorage } from "@vueuse/core";
 export type AppState = "ACTIVE" | "EXPIRED" | "BLOCKED";
 
-const EXPIRATION_DATE = new Date("2026-05-15T23:59:59z");
+const EXPIRATION_DATE = new Date("2026-02-04T23:59:59z");
 const GRACE_DAYS = 3;
 const MAX_TIME_DRIFT = 5 * 60 * 1000; // 5 minutos
 
