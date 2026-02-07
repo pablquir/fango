@@ -36,25 +36,26 @@ onBeforeUnmount(() => {
         :ui="{
           leadingIcon: 'size-6',
         }"
-        class="p-4 rounded-full bg-stone-950 fill-stone-100"
+        class="p-4 rounded-full bg-stone-950 text-slate-100 fill-stone-100"
       />
     </div>
     <div class="flex justify-between w-full px-2">
       <UButton
         label="Ruta"
         icon="icon:route-solid-full"
-        class="px-4 py-2 rounded-full fill-slate-100 bg-stone-950"
+        class="text-slate-100 px-4 py-2 rounded-full fill-slate-100 bg-stone-950"
       />
       <USlideover
         v-model:open="isSlideOver"
         :overlay="false"
         side="bottom"
-        class="text-md"
+        class="text-md rounded-full"
+        :ui="{ content: 'bg-transparent' }"
       >
         <UButton
           icon="icon:chevron-up-solid-full"
           label="Mostrar"
-          class="px-4 py-2 rounded-full fill-slate-100 bg-stone-950"
+          class="text-slate-100 px-4 py-2 rounded-full fill-slate-100 bg-stone-950"
         />
 
         <!-- menu expanded -->
@@ -117,7 +118,7 @@ onBeforeUnmount(() => {
                     class="flex flex-col flex-2 gap-4 bg-stone-500 rounded-xl p-2"
                   >
                     <div class="flex flex-1 w-full">
-                      <span class="">Chat</span>
+                      <span class="text-slate-100 text-lg">Chat</span>
                     </div>
                     <div class="flex flex-1 justify-end w-full">
                       <Icon name="icon:comment-solid-full" size="30" />
@@ -127,7 +128,7 @@ onBeforeUnmount(() => {
                     class="flex flex-col gap-4 flex-1 bg-stone-500 rounded-xl p-2"
                   >
                     <div class="flex flex-1 w-full">
-                      <span>Llamar</span>
+                      <span class="text-slate-100 text-lg">Llamar</span>
                     </div>
                     <div class="flex flex-1 justify-end w-full">
                       <Icon name="icon:phone-flip-solid-full" size="30" />
@@ -145,9 +146,9 @@ onBeforeUnmount(() => {
                     >
                       <Icon name="icon:coins-solid-full" size="24" />
                     </div>
-                    <span>Metodo de pago</span>
+                    <span class="text-slate-100 text-lg">Metodo de pago</span>
                   </div>
-                  <div class="w-full font-bold text-end text-xl">
+                  <div class="text-slate-100 w-full font-bold text-end text-xl">
                     Cobro en efectivo
                   </div>
                 </UButton>
@@ -157,7 +158,9 @@ onBeforeUnmount(() => {
                   <UButton
                     class="flex flex-col gap-4 flex-1 rounded-xl bg-green-500 text-stone-900 fill-stone-900 p-2"
                   >
-                    <div class="text-left text-lg w-full">Seguridad</div>
+                    <div class="text-left text-lg w-full text-slate-100">
+                      Seguridad
+                    </div>
                     <div class="flex justify-end items-end w-full h-full">
                       <Icon name="icon:shield-halved-solid-full" size="36" />
                     </div>
@@ -166,7 +169,9 @@ onBeforeUnmount(() => {
                   <UButton
                     class="flex flex-col gap-4 flex-1 rounded-xl p-2 bg-stone-700"
                   >
-                    <div class="w-full text-lg text-left">Navegador</div>
+                    <div class="w-full text-lg text-left text-slate-100">
+                      Navegador
+                    </div>
                     <div class="flex justify-end w-full h-full items-end">
                       <Icon name="icon:location-arrow-solid-full" size="36" />
                     </div>
@@ -175,7 +180,7 @@ onBeforeUnmount(() => {
                   <UButton
                     class="flex flex-col gap-4 flex-1 rounded-xl p-2 bg-stone-700"
                   >
-                    <div class="w-full text-lg text-left">
+                    <div class="w-full text-lg text-left text-slate-100">
                       Cancelar el viaje
                     </div>
                     <div class="flex justify-end w-full">
@@ -231,7 +236,7 @@ onBeforeUnmount(() => {
           variant="ghost"
         >
           <Icon name="icon:comment-solid-full" size="24" />
-          <span>Chats</span>
+          <span class="">Chats</span>
         </UButton>
         <UButton
           class="flex flex-col fill-stone-500 text-stone-500"
