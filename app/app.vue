@@ -30,14 +30,12 @@
 //     { rel: 'manifest', href: '/manifest.webmanifest' }
 //   ]
 // })
-const { appState } = useLicense()
-onMounted(() => {
-  console.log(appState.value)
-})
+const { appState } = useLicense();
+onMounted(() => {});
 </script>
 
 <template>
-  <UApp>
+  <UApp class="bg-stone-950">
     <SharedNavTop />
 
     <UMain>
