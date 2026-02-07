@@ -9,11 +9,6 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      link: [
-        {
-          rel: "manifest",
-        },
-      ],
       meta: [{ name: "theme-color", content: "#0c0a09" }],
     },
     baseURL: "/fango/",
