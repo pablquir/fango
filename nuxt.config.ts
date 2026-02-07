@@ -75,7 +75,8 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallback: "/fango/index.html",
+      cleanupOutdatedCaches: true,
+      globPatterns: ["**/*.{js,css,html,ico,png,svg,webmanifest,opus}"],
       navigateFallbackDenylist: [
         /^\/_nuxt\//,
         /\/manifest\.webmanifest$/,
