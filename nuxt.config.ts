@@ -52,13 +52,16 @@ export default defineNuxtConfig({
   },
   pwa: {
     registerType: "autoUpdate",
+    scope: "/fango/",
+    base: "/fango/",
     manifest: {
+      start_url: "/fango/",
+      scope: "/fango/",
       name: "Fango",
       short_name: "Fango",
       theme_color: "#0c0a09",
       background_color: "#0c0a09",
       display: "standalone",
-      start_url: "/",
       icons: [
         {
           src: "/pwa/icon-192.png",
