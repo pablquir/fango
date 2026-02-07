@@ -12,13 +12,12 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "manifest",
-          href: "/manifest.webmanifest",
         },
       ],
       meta: [{ name: "theme-color", content: "#0c0a09" }],
     },
     baseURL: "/fango/",
-    buildAssetsDir: "/_nuxt/",
+    buildAssetsDir: "_nuxt/",
   },
 
   css: ["~/assets/css/main.css"],
@@ -64,12 +63,12 @@ export default defineNuxtConfig({
       display: "standalone",
       icons: [
         {
-          src: "/pwa/icon-192.png",
+          src: "/fango/pwa/icon-192.png",
           sizes: "192x192",
           type: "image/png",
         },
         {
-          src: "/pwa/icon-512.png",
+          src: "/fango/pwa/icon-512.png",
           sizes: "512x512",
           type: "image/png",
         },
