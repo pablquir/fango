@@ -30,10 +30,10 @@
 //     { rel: 'manifest', href: '/manifest.webmanifest' }
 //   ]
 // })
-const { appState } = useLicense();
+const { appState } = useLicense()
 onMounted(() => {
-  console.log(appState.value);
-});
+  console.log(appState.value)
+})
 </script>
 
 <template>

@@ -7,6 +7,6 @@
       loading="lazy"
       class="w-full h-full"
       referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    />
   </div>
 </template>

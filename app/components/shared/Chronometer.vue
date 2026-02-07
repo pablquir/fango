@@ -1,9 +1,9 @@
 <script setup>
 // let { time } = useStopwatch();
 
-onMounted(() => {});
+onMounted(() => {})
 
-onBeforeUnmount(() => {});
+onBeforeUnmount(() => {})
 </script>
 
 <template>
