@@ -1,77 +1,79 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 /// <reference types="@vite-pwa/nuxt" />
 export default defineNuxtConfig({
-  modules: ['@vite-pwa/nuxt', '@nuxt/eslint', '@nuxt/ui', '@nuxt/icon'],
+  modules: ["@vite-pwa/nuxt", "@nuxt/eslint", "@nuxt/ui", "@nuxt/icon"],
   ssr: false,
 
   devtools: {
-    enabled: true
+    enabled: true,
   },
   app: {
     head: {
       link: [
         {
-          rel: 'manifest',
-          href: '/manifest.webmanifest'
-        }
+          rel: "manifest",
+          href: "/manifest.webmanifest",
+        },
       ],
-      meta: [{ name: 'theme-color', content: '#0c0a09' }]
-    }
+      meta: [{ name: "theme-color", content: "#0c0a09" }],
+    },
+    baseURL: "/fango/",
+    buildAssetsDir: "/_nuxt/",
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
 
   routeRules: {
-    '/': { prerender: true }
+    "/": { prerender: true },
   },
 
-  compatibilityDate: '2025-01-15',
+  compatibilityDate: "2025-01-15",
   nitro: {
-    preset: 'static'
+    preset: "static",
   },
 
   eslint: {
     config: {
       stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
+        commaDangle: "never",
+        braceStyle: "1tbs",
+      },
+    },
   },
   icon: {
-    class: 'icon',
-    mode: 'svg',
+    class: "icon",
+    mode: "svg",
     customCollections: [
       {
-        prefix: 'icon',
-        dir: './app/assets/icons'
-      }
-    ]
+        prefix: "icon",
+        dir: "./app/assets/icons",
+      },
+    ],
   },
   pwa: {
-    registerType: 'autoUpdate',
+    registerType: "autoUpdate",
     manifest: {
-      name: 'Fango',
-      short_name: 'Fango',
-      theme_color: '#0c0a09',
-      background_color: '#0c0a09',
-      display: 'standalone',
-      start_url: '/',
+      name: "Fango",
+      short_name: "Fango",
+      theme_color: "#0c0a09",
+      background_color: "#0c0a09",
+      display: "standalone",
+      start_url: "/",
       icons: [
         {
-          src: '/pwa/icon-192.png',
-          sizes: '192x192',
-          type: 'image/png'
+          src: "/pwa/icon-192.png",
+          sizes: "192x192",
+          type: "image/png",
         },
         {
-          src: '/pwa/icon-512.png',
-          sizes: '512x512',
-          type: 'image/png'
-        }
-      ]
+          src: "/pwa/icon-512.png",
+          sizes: "512x512",
+          type: "image/png",
+        },
+      ],
     },
     workbox: {
-      navigateFallbackDenylist: [/^\/page-expired/]
-    }
-  }
-})
+      navigateFallbackDenylist: [/^\/page-expired/],
+    },
+  },
+});
