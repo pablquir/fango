@@ -75,7 +75,12 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallbackDenylist: [/^\/page-expired/],
+      navigateFallback: "/fango/index.html",
+      navigateFallbackDenylist: [
+        /^\/_nuxt\//,
+        /\/manifest\.webmanifest$/,
+        /^\/page-expired/,
+      ],
     },
   },
 });
