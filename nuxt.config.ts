@@ -10,6 +10,12 @@ export default defineNuxtConfig({
   app: {
     head: {
       meta: [{ name: "theme-color", content: "#0c0a09" }],
+      link: [
+        {
+          rel: "manifest",
+          href: "/fango/manifest.webmanifest",
+        },
+      ],
     },
     baseURL: "/fango/",
     buildAssetsDir: "/_nuxt/",
