@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       meta: [{ name: "theme-color", content: "#0c0a09" }],
     },
     baseURL: "/fango/",
-    buildAssetsDir: "_nuxt/",
+    buildAssetsDir: "/_nuxt/",
   },
 
   css: ["~/assets/css/main.css"],
