@@ -46,6 +46,8 @@ export default defineNuxtConfig({
   },
   pwa: {
     registerType: "autoUpdate",
+    injectRegister: "auto",
+    manifestFilename: "manifest.webmanifest",
     scope: "/fango/",
     base: "/fango/",
     manifest: {
